@@ -738,6 +738,18 @@
     border-radius: 4px;
     background-color: var(--adress-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding: 40px 39px 40px 41px;
+}
+
+.modal-content p{
+    width: 448px;
+    color: var(--nav-color);
+    text-align: center;
+    font-family: var(--nav-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
 }
 
 
