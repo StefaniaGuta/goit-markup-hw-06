@@ -739,6 +739,8 @@
     background-color: var(--adress-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding: 40px 39px 40px 41px;
+    display: block;
+
 }
 
 .modal-content p{
@@ -750,8 +752,69 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
+    gap: 10px;
 }
 
+.modal-content label{
+    width: 41px;
+    color: #757575;
+    font-family: var(--nav-font-family);
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    padding-left: 42px;
+    margin-bottom: 4px;
+}
+
+.modal-content input,
+.modal-content textarea{
+    width: 448px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    outline: none;
+    
+}
+
+.icon-form{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 11px 12px;
+    
+}
+
+.modal-content b{
+    width: 396px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.submit{
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--diff-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--adress-color);
+    text-align: center;
+    font-family: var(--nav-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border: none;
+}
 
 .close-btn{
     position: absolute;
