@@ -352,29 +352,42 @@
                     <use href="./Images/symbol-defs.svg#icon-button"/>
                 </svg>
             <p>Leave your information and we'll call you back</p>
-            <form name="contact-form" autocomplete="off">
-                <label for="name" class="text-form">Name</label>
+            <form name="contact-form" autocomplete="off" method="get">
+
+                <div class="input-container">
+                    <label for="name" class="text-form">Name</label>
+                
                     <input type="name" name="name" id="name">
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-person_black"/>
-                    </svg>
+                    </svg>   
+                </div>
 
-                <label for="tel" class="text-form">Telephone</label>
+                <div>
+                    <label for="tel" class="text-form">Telephone</label>
                     <input type="tel" name="telephone" id="tel">
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-phone_black"/>
                     </svg>
+                </div>
 
-                <label for="email" class="text-form">E-mail</label>
+                <div>
+                    <label for="email" class="text-form">E-mail</label>
                     <input type="email" name="email" id="email">
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-email_black"/>
                     </svg>
+                </div>
 
-                <label for="comment">Comments</label>
+                <div>
+                    <label for="comment">Comments</label>
                     <textarea name="comments" rows="10" placeholder="Enter the text" id="comment"></textarea>
+                </div>
     
-                    <b>I agree with the letter and accept the Terms and Conditions</b>
+                    <span>
+                        I agree with the letter and accept the
+                        <a>Terms and Conditions</a>
+                    </span>
                 <button type="submit" class="submit">Send</button>
             </form>
         </div>

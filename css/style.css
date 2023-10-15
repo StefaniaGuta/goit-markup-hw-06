@@ -739,8 +739,24 @@
     background-color: var(--adress-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding: 40px 39px 40px 41px;
-    display: block;
+}
 
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content div{
+    position: relative;   
+    gap: 4px;
+}
+
+.icon-form{
+    position:absolute;
+    left: 0;
+    top: calc(50% - 9px);
 }
 
 .modal-content p{
@@ -752,8 +768,10 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
-    gap: 10px;
+    margin-bottom: 12px;
 }
+
+
 
 .modal-content label{
     width: 41px;
@@ -762,19 +780,29 @@
     font-size: 12px;
     line-height: normal;
     letter-spacing: 0.12px;
-    padding-left: 42px;
-    margin-bottom: 4px;
+    
 }
 
-.modal-content input,
-.modal-content textarea{
+.modal-content input{
     width: 448px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     outline: none;
-    
+    padding: 11px 12px 11px 42px;
+    margin-bottom: 10px;
+}
+
+.modal-content textarea{
+    width: 448px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    outline: none;
+    padding: 11px 12px;
+    margin-bottom: 20px;
 }
 
 .icon-form{
@@ -782,20 +810,34 @@
     height: 18px;
     flex-shrink: 0;
     margin: 11px 12px;
-    
 }
 
-.modal-content b{
-    width: 396px;
-    height: 24px;
-    flex-shrink: 0;
-    color: #757575;
-    font-family: Roboto;
+.modal-content input:focus +svg{
+    fill:var(--diff-color);
+    border-color:#2196F3;
+}
+
+.modal-content textarea:focus{
+    border:1px solid var(--diff-color);
+}
+
+.modal-content span{
+    color: var(--header-color);
+    font-family: var(--nav-font-family);
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+    margin-bottom: 20px;
+}
+
+.modal-content span a{
+    color: var(--diff-color);
+    font-family: var(--nav-font-family);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .submit{
@@ -814,6 +856,13 @@
     line-height: 30px;
     letter-spacing: 0.96px;
     border: none;
+    padding: 10px 80px;
+}
+
+.submit:focus,
+.submit:hover{
+    background-color: #188CE8;
+    cursor: pointer;
 }
 
 .close-btn{
