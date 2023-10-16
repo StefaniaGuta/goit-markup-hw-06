@@ -354,40 +354,46 @@
             <p>Leave your information and we'll call you back</p>
             <form name="contact-form" autocomplete="off" method="get">
 
-                <div class="input-container">
+                <div class="content-modal-container">
                     <label for="name" class="text-form">Name</label>
-                
-                    <input type="name" name="name" id="name">
+                    <input class="input-content" type="name" name="name" id="name">
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-person_black"/>
                     </svg>   
                 </div>
 
-                <div>
+                <div class="content-modal-container">
                     <label for="tel" class="text-form">Telephone</label>
-                    <input type="tel" name="telephone" id="tel">
+                    <input class="input-content" type="tel" name="telephone" id="tel">
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-phone_black"/>
                     </svg>
                 </div>
 
-                <div>
+                <div class="content-modal-container">
                     <label for="email" class="text-form">E-mail</label>
-                    <input type="email" name="email" id="email">
+                    <input class="input-content" type="email" name="email" id="email">
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-email_black"/>
                     </svg>
                 </div>
 
-                <div>
-                    <label for="comment">Comments</label>
-                    <textarea name="comments" rows="10" placeholder="Enter the text" id="comment"></textarea>
+                <div class="content-modal-container">
+                    <label for="comment" class="text-form">Comments</label>
+                    <textarea class="text" name="comments" rows="10" placeholder="Enter the text" id="comment"></textarea>
                 </div>
-    
-                    <span>
-                        I agree with the letter and accept the
-                        <a>Terms and Conditions</a>
-                    </span>
+                
+                <div class="term-condition-container">
+                    <input type="checkbox" class="term-condition-checkbox" name="term-condition-checkbox" id="term-condition-checkbox" value="Checked"/>
+                    <label for="term-condition-checkbox" class="term-condition-label">
+                        
+                        <span>
+                            I agree with the letter and accept the
+                            <a href="#">Terms and Conditions</a>
+                        </span>
+                    </label>
+                </div>
+
                 <button type="submit" class="submit">Send</button>
             </form>
         </div>
