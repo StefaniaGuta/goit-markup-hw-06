@@ -9,7 +9,7 @@
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .global-body body{
-    overflow-x: hidden;
+    
     font-family: 'Roboto', 'Courier New', Courier, monospace, sans-serif;
     background-color: var(--adress-color);
     text-decoration: none;
@@ -30,7 +30,7 @@
 }
 
 .logo-header{
-    padding: 24px 0 0 215px;
+    padding: 24px 0 0 115px;
     margin-right: 93px;
 }
 
@@ -135,7 +135,7 @@
 
 /*Studio page*/
 .effectiv-btn-section{
-    overflow-x: hidden;
+    
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../Images/Background.png");
     background-repeat: no-repeat;
     background-position:center;
@@ -190,7 +190,7 @@
 }
 
 .description-section{
-    overflow-x: hidden;
+    
     padding: 94px 215px;
 }    
 
@@ -243,7 +243,7 @@
 }
 
 .ocupation-section{
-    overflow-x: hidden;
+    
     padding-bottom: 94px;
     background-color: var(--adress-color);
 }
@@ -305,7 +305,6 @@
 }
 
 .our-team-section{
-    overflow-x: hidden;
     background-color: var(--button-color);
     padding: 0 215px 94px 215px;
 }
@@ -404,7 +403,7 @@
 
 .customers-container{
     background: var(--adress-color);
-    overflow-x: hidden;
+
     display: block;
     padding: 94px 215px;
     margin-left: auto;
@@ -574,7 +573,6 @@
 
 .cards-prtf .imgoverlay{
     position: relative;
-    overflow: hidden;
 }
 
 .portofoliu .card-set-portofoliu .cards-prtf .overlay{
@@ -604,13 +602,13 @@
 
 /*Footer section*/
 .footer-section{
-    overflow-x: hidden;
+    width: 100vw;
     background-color: #2F303A;
     display: flex;
 }
 
 .footer-container{
-    padding: 60px 0 60px 215px;
+    padding: 60px 0 60px 115px;
 }
 
 .adress-section span{
@@ -633,8 +631,8 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.42px;
-    cursor: pointer;
     font-style: normal;
+    cursor: pointer;
     transition: color var(--transition);
 }
 
@@ -666,7 +664,7 @@
 .find-us-section{
     display: block;
     margin-left: 94px;
-    padding: 75px 0 96px 0;
+    padding: 72px 0 96px 0;
 }
 
 .social-media-footer-container{
@@ -712,6 +710,88 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.subscribe-container{
+    display: block;
+    padding: 72px 0 93px 93px;
+    width: 570px;
+    height: 86px;
+    flex-shrink: 0;
+}
+
+.subscribe-container div{
+    display: flex;
+    flex-direction: row;
+}
+
+.subscribe-container h3{
+    color: var(--adress-color);
+    font-family: var(--nav-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    align-self: flex-end;
+}
+
+.subscribe-container .subscribe-input{
+    width: 358px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 12px;
+}
+
+.subscribe-input::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: var(--nav-font-family);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    padding: 15px 0 15px 16px;
+}
+.subscribe-btn{
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FFFFFF1A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 0;
+    color: var(--adress-color);
+    text-align: center;
+    font-family: var(--transition);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    cursor: pointer;
+    padding: 10px 77px 10px 43px;
+    position: relative;
+    transition: background-color var(--transition);
+
+}
+
+.subscribe-btn svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: absolute;
+    top:13px;
+    left: 148px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus{
+    background-color: var(--diff-color) ;
 }
 
 /*Modal*/
@@ -864,7 +944,7 @@ textarea::placeholder {
 }
 
 .term-condition-container .term-condition-checkbox:checked{
-  color:#2196F3;
+  accent-color:#2196F3;
 }
 
 .submit{
@@ -914,10 +994,10 @@ textarea::placeholder {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
-    
 }
 
-.close-btn:hover{
+.close-btn:hover,
+.close-btn:focus{
     fill: #188CE8;
 }
 .is-hidden{
