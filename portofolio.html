@@ -220,7 +220,13 @@
                 <h3>Subscribe to the newsletter</h3>
                 <div class="substribe-input-btn">
                     <label for="email-subscribe" class="text-form"></label>
-                    <input class="subscribe-input" type="email" name="email" id="email-subscribe" placeholder="E-mail">
+                    <input class="subscribe-input" 
+                    type="email" 
+                    name="email" 
+                    id="email-subscribe" 
+                    placeholder="E-mail"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                    autocomplete="off">
                     <button type="submit" class="subscribe-btn">Subscribe
                         <svg class="send-subscribe-icon">
                             <use href="./Images/symbol-defs.svg#icon-icon-send"></use>

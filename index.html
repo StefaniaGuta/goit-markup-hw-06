@@ -347,7 +347,13 @@
         <h3>Subscribe to the newsletter</h3>
         <div class="substribe-input-btn">
             <label for="email-subscribe" class="text-form"></label>
-            <input class="subscribe-input" type="email" name="email" id="email-subscribe" placeholder="E-mail">
+            <input class="subscribe-input" 
+                type="email" 
+                name="email" 
+                id="email-subscribe" 
+                placeholder="E-mail" 
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                autocomplete="off">
             <button type="submit" class="subscribe-btn">Subscribe
                 <svg class="send-subscribe-icon">
                     <use href="./Images/symbol-defs.svg#icon-icon-send"></use>
@@ -369,7 +375,7 @@
 
                 <div class="content-modal-container">
                     <label for="name" class="text-form">Name</label>
-                    <input class="input-content" type="name" name="name" id="name">
+                    <input class="input-content" type="name" name="name" id="name" required>
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-person_black"/>
                     </svg>   
@@ -377,7 +383,11 @@
 
                 <div class="content-modal-container">
                     <label for="tel" class="text-form">Telephone</label>
-                    <input class="input-content" type="tel" name="telephone" id="tel">
+                    <input class="input-content" 
+                        type="tel" name="telephone" 
+                        id="tel" 
+                        required
+                        />
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-phone_black"/>
                     </svg>
@@ -385,7 +395,12 @@
 
                 <div class="content-modal-container">
                     <label for="email" class="text-form">E-mail</label>
-                    <input class="input-content" type="email" name="email" id="email">
+                    <input class="input-content" 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        required>
                     <svg class="icon-form">
                         <use href="./Images/symbol-defs.svg#icon-email_black"/>
                     </svg>
@@ -397,8 +412,15 @@
                 </div>
                 
                 <div class="term-condition-container">
-                    <input type="checkbox" class="term-condition-checkbox" name="term-condition-checkbox" id="term-condition-checkbox" value="Checked"/>
-                    <label for="term-condition-checkbox" class="term-condition-label" >
+                    <label for="term-condition-checkbox" class="term-condition-label"></label>
+                        <input type="checkbox" 
+                        class="term-condition-checkbox" 
+                        name="term-condition-checkbox" 
+                        id="term-condition-checkbox" 
+                        value="Checked"
+                        required
+                        />
+    
                         <span>
                             I agree with the letter and accept the
                             <a href="#">Terms and Conditions</a>
